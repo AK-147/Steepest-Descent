@@ -9,7 +9,7 @@
   <h2>:book: Description</h2>
   <ul>
     <li>:chart_with_downwards_trend: An algorithm to minimize multivariate polynomials via Steepest Descent using multiple line search methods</li>
-    <li>:newspaper: Has a text-based user interface for use in command line along with an expansive menu with various options</li>
+    <li>:speech_balloon: Has a text-based user interface for use in command line along with an expansive menu with various options</li>
     <li>:books: Created as the cumalative final project for university course of object oriented programming fundamentals</li>
   </ul>
 
