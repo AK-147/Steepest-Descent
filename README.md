@@ -20,7 +20,7 @@
     <li><strong>Pro5_khanah41.java</strong> is the driver class responsible for the text-based user interface</li>
     <li><strong>SDArmijo.java</strong> finds the optimal algorithm step sizes using the Armijo line search method</li>
     <li><strong>SDFixed.java</strong> sets and returns a single algorithm step size by way of a fixed value</li>
-    <li><strong>SDGSS.java</strong> gets the optimal algorithm step sizes using the golden section search method</li>
+    <li><strong>SDGSS.java</strong> gets the optimal algorithm step sizes using the golden-section search method</li>
     <li><strong>SteepestDescent.java</strong> consists of the logic for executing the main algorithm and other methods</li>
   </ul>
 
@@ -34,10 +34,14 @@
   <h2>:warning: Disclaimers</h2>
   <p>This application does not implement the Steepest Descent algorithm for all functions, rather only polynomials of the form:</p>
   <h3>
-    <em>f(x) = a<sub>n</sub> x<sup>n</sup> + a<sub>n-1</sub> x<sup>n-1</sup> + ... + a<sub>2</sub> x<sup>2</sup> + a<sub>1</sub> x + a<sub>0</sub></em>
+    <em>f ( x, ..., x<sub>n</sub> ) = a<sub>n</sub> x<sup>n</sup> + a<sub>n-1</sub> x<sup>n-1</sup> + ... + a<sub>2</sub> x<sup>2</sup> + a<sub>1</sub> x + a<sub>0</sub></em>
   </h3>
   <p>
-    <em>More to be added</em>
+    Along with this, the algorithm does not find the global minimum of the polynomial. Rather it looks for the nearest local minimum
+    and stops until the maximum number of specified iterations or sufficient closeness to a local minimum is reached. The line search
+    methods also vary in precision, with the fixed step-size and Armijo line search being inexact since it would take far too long to
+    reach a perfectly optimal step-size. The golden-section search, however, is the most exact in its precision due to it being the
+    most effective search algorithm out of the three.
   </p>
   <h2></h2>
   <h3>:chart_with_upwards_trend::chart_with_downwards_trend: Enjoy :chart_with_upwards_trend::chart_with_downwards_trend:</h3>
