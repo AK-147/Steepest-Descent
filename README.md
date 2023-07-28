@@ -38,10 +38,12 @@
   </h3>
   <p>
     Along with this, the algorithm does not find the global minimum of the polynomial. Rather it looks for the nearest local minimum
-    and stops until the maximum number of specified iterations or sufficient closeness to a local minimum is reached. The line search
-    methods also vary in precision, with the fixed step-size and Armijo line search being inexact since it would take far too long to
-    reach a perfectly optimal step-size. The golden-section search, however, is the most exact in its precision due to it being the
-    most effective search algorithm out of the three.
+    and stops until the maximum number of specified iterations or sufficient closeness to a local minimum is reached.
+  </p>
+  <p>
+    The line search methods also vary in precision, with the fixed step-size and Armijo line search being inexact since it would take
+    far too long to reach a perfectly optimal step-size. The golden-section search, however, is the most exact in its precision due to
+    it being the most effective search algorithm out of the three.
   </p>
   <h2></h2>
   <h3>:chart_with_upwards_trend::chart_with_downwards_trend: Enjoy :chart_with_upwards_trend::chart_with_downwards_trend:</h3>
