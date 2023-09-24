@@ -32,7 +32,7 @@
   </p>
   
   <h2>:warning: Disclaimers</h2>
-  <p>This application does not implement the Steepest Descent algorithm for all functions, rather only polynomials of the form:</p>
+  <p>This application does not implement the Steepest Descent algorithm for all mathematical functions, rather only polynomials of the form:</p>
   <h3>
     <em>f ( x, ..., x<sub>n</sub> ) = a<sub>n</sub> x<sup>n</sup> + a<sub>n-1</sub> x<sup>n-1</sup> + ... + a<sub>2</sub> x<sup>2</sup> + a<sub>1</sub> x + a<sub>0</sub></em>
   </h3>
