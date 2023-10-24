@@ -8,20 +8,20 @@
   
   <h2>:book: Description</h2>
   <ul>
-    <li>:chart_with_downwards_trend: An algorithm to minimize multivariate polynomials via Steepest Descent using multiple line search methods</li>
-    <li>:speech_balloon: Has a text-based user interface for use in command line as well as an expansive menu with various options</li>
-    <li>:books: Created as the cumulative final project for university course of object-oriented programming fundamentals</li>
+    <li>:chart_with_downwards_trend: An algorithm to minimize multivariate polynomials via Steepest Descent using multiple line search methods.</li>
+    <li>:speech_balloon: Has a text-based user interface for use in command line as well as an expansive menu with various options.</li>
+    <li>:books: Created as the cumulative final project for university course of object-oriented programming fundamentals.</li>
   </ul>
 
   <h2>:file_folder: Contents</h2>
   <p>The <strong>bin</strong> folder can be ignored for our purposes. Looking at the <strong>src</strong> folder, we have:</p>
   <ul>
-    <li><strong>Polynomial.java</strong> is a class to define entered polynomials as its own object with properties</li>
-    <li><strong>Pro5_khanah41.java</strong> is the driver class responsible for the text-based user interface</li>
-    <li><strong>SDArmijo.java</strong> finds the optimal algorithm step sizes using the Armijo line search method</li>
-    <li><strong>SDFixed.java</strong> sets and returns a single algorithm step size by way of a fixed value</li>
-    <li><strong>SDGSS.java</strong> gets the optimal algorithm step sizes using the golden-section search method</li>
-    <li><strong>SteepestDescent.java</strong> consists of the logic for executing the main algorithm and other methods</li>
+    <li><strong>Polynomial.java</strong> is a class to define entered polynomials as its own object with properties.</li>
+    <li><strong>Pro5_khanah41.java</strong> is the driver class responsible for the text-based user interface.</li>
+    <li><strong>SDArmijo.java</strong> finds the optimal algorithm step sizes using the Armijo line search method.</li>
+    <li><strong>SDFixed.java</strong> sets and returns a single algorithm step size by way of a fixed value.</li>
+    <li><strong>SDGSS.java</strong> gets the optimal algorithm step sizes using the golden-section search method.</li>
+    <li><strong>SteepestDescent.java</strong> consists of the logic for executing the main algorithm and other methods.</li>
   </ul>
 
   <h2>:arrow_down: Installation</h2>
