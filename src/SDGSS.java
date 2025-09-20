@@ -57,15 +57,15 @@ public class SDGSS extends SteepestDescent {
 		System.out.println("Set parameters for SD with a golden section line search:");
 		
 		// get maximum step size
-		double mx = Pro5_khanah41.getDouble("Enter GSS maximum step size (0 to cancel): ", 0.00, Double.POSITIVE_INFINITY);
+		double mx = Main.getDouble("Enter GSS maximum step size (0 to cancel): ", 0.00, Double.POSITIVE_INFINITY);
 		if (mx == 0.00) { return false; }
 		
 		// get minimum step size
-		double mn = Pro5_khanah41.getDouble("Enter GSS minimum step size (0 to cancel): ", 0.00, mx);
+		double mn = Main.getDouble("Enter GSS minimum step size (0 to cancel): ", 0.00, mx);
 		if (mn == 0.00) { return false; }
 		
 		// get delta parameter
-		double d = Pro5_khanah41.getDouble("Enter GSS delta (0 to cancel): ", 0.00, Double.POSITIVE_INFINITY);
+		double d = Main.getDouble("Enter GSS delta (0 to cancel): ", 0.00, Double.POSITIVE_INFINITY);
 		if (d == 0.00) { return false; }
 		
 		// user canceled process
@@ -167,4 +167,5 @@ public class SDGSS extends SteepestDescent {
 	
 	
 } // end of class
+
 
