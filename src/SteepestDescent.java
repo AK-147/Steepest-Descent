@@ -164,15 +164,15 @@ public class SteepestDescent {
 	public boolean getParamsUser () throws NumberFormatException, IOException { 
 			
 		// get tolerance epsilon
-		double e = Pro5_khanah41.getDouble("Enter tolerance epsilon (0 to cancel): ", 0.00, Double.POSITIVE_INFINITY);
+		double e = Main.getDouble("Enter tolerance epsilon (0 to cancel): ", 0.00, Double.POSITIVE_INFINITY);
 		if (e == 0.00) { return false; }
 		
 		// get maximum number of iterations
-		int m = Pro5_khanah41.getInteger("Enter maximum number of iterations (0 to cancel): ", 0, this.iterLimit);
+		int m = Main.getInteger("Enter maximum number of iterations (0 to cancel): ", 0, this.iterLimit);
 		if (m == 0) { return false; }
 		
 		// get starting point
-		double x = Pro5_khanah41.getDouble("Enter value for starting point (0 to cancel): ", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY);
+		double x = Main.getDouble("Enter value for starting point (0 to cancel): ", Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY);
 		if (x == 0.00) { return false; }
 		
 		// new algorithm parameters set
@@ -200,13 +200,13 @@ public class SteepestDescent {
 		this.printAverages("Average", false);
 		
 		// print standard deviation for each metric in the sample
-		System.out.format("St Dev %13.3f%13.3f%18.3f%n", Pro5_khanah41.stDev(gradNorm), Pro5_khanah41.stDev(iter), Pro5_khanah41.stDev(time));
+		System.out.format("St Dev %13.3f%13.3f%18.3f%n", Main.stDev(gradNorm), Main.stDev(iter), Main.stDev(time));
 		
 		// print minimum for each metric in the sample
-		System.out.format("Min    %13.3f%13.0f%18.0f%n", Pro5_khanah41.min(gradNorm), Pro5_khanah41.min(iter), Pro5_khanah41.min(time));
+		System.out.format("Min    %13.3f%13.0f%18.0f%n", Main.min(gradNorm), Main.min(iter), Main.min(time));
 
 		// print maximum for each metric in the sample
-		System.out.format("Max    %13.3f%13.0f%18.0f%n%n", Pro5_khanah41.max(gradNorm), Pro5_khanah41.max(iter), Pro5_khanah41.max(time));
+		System.out.format("Max    %13.3f%13.0f%18.0f%n%n", Main.max(gradNorm), Main.max(iter), Main.max(time));
 		
 	} // end of function
 	
@@ -276,7 +276,7 @@ public class SteepestDescent {
 		}
 		
 		// print average for each metric of performance
-		System.out.format("%-7s%13.3f%13.3f%18.3f%n", title, Pro5_khanah41.mean(gradNorm), Pro5_khanah41.mean(iter), Pro5_khanah41.mean(time));
+		System.out.format("%-7s%13.3f%13.3f%18.3f%n", title, Main.mean(gradNorm), Main.mean(iter), Main.mean(time));
 		
 	} // end of function
 	
@@ -298,4 +298,5 @@ public class SteepestDescent {
 	
 
 } // end of class
+
 
