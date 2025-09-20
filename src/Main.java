@@ -2,7 +2,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Pro5_khanah41 {
+public class Main {
 
 	// global object to read user input at command line
 	public static BufferedReader bf;
@@ -501,4 +501,5 @@ public class Pro5_khanah41 {
 
 	
 } // end of class
+
 
