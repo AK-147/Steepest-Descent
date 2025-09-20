@@ -30,7 +30,7 @@ public class SDFixed extends SteepestDescent {
 		System.out.println("\nSet parameters for SD with a fixed line search:");
 		
 		// get fixed step size
-		double a = Pro5_khanah41.getDouble("Enter fixed step size (0 to cancel): ", 0.00, Double.POSITIVE_INFINITY);
+		double a = Main.getDouble("Enter fixed step size (0 to cancel): ", 0.00, Double.POSITIVE_INFINITY);
 		if (a == 0.00) { return false; }
 		
 		// user canceled process
@@ -53,3 +53,4 @@ public class SDFixed extends SteepestDescent {
 	
 	
 } // end of class
+
