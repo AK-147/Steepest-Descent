@@ -74,19 +74,19 @@ public class SDArmijo extends SteepestDescent {
 		System.out.println("Set parameters for SD with an Armijo line search:");
 		
 		// get Armijo max step size
-		double m = Pro5_khanah41.getDouble("Enter Armijo max step size (0 to cancel): ", 0.00, Double.POSITIVE_INFINITY);
+		double m = Main.getDouble("Enter Armijo max step size (0 to cancel): ", 0.00, Double.POSITIVE_INFINITY);
 		if (m == 0.00) { return false; }
 		
 		// get Armijo beta parameter
-		double b = Pro5_khanah41.getDouble("Enter Armijo beta (0 to cancel): ", 0.00, 1.00);
+		double b = Main.getDouble("Enter Armijo beta (0 to cancel): ", 0.00, 1.00);
 		if (b == 0.00) { return false; }
 		
 		// get Armijo tau parameter
-		double t = Pro5_khanah41.getDouble("Enter Armijo tau (0 to cancel): ", 0.00, 1.00);
+		double t = Main.getDouble("Enter Armijo tau (0 to cancel): ", 0.00, 1.00);
 		if (t == 0.00) { return false; }
 		
 		// get Armijo max number of iterations
-		int k = Pro5_khanah41.getInteger("Enter Armijo K (0 to cancel): ", 0, Integer.MAX_VALUE);
+		int k = Main.getInteger("Enter Armijo K (0 to cancel): ", 0, Integer.MAX_VALUE);
 		if (k == 0) { return false; }
 		
 		// user canceled process
@@ -112,4 +112,5 @@ public class SDArmijo extends SteepestDescent {
 	
 	
 } // end of class
+
 
